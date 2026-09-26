@@ -86,6 +86,30 @@ namespace G_NET_106_OOP_05
             #endregion
 
 
+            #region Question04
+
+            /*
+             
+            a) An extension method is a static method that allows you to add new functionality to an existing type without modifying
+               its source code, inheriting from it, or recompiling it. It can be invoked using instance method syntax 
+               as if it were a natural member of that type.
+
+            b) The this keyword must precede the first parameter to specify the type the method is extending.
+
+
+            c) An extension method must be declared inside a static class.
+
+
+            d) No. An extension method operates like any other external method and can only access the public
+               or accessible internal members of the class it extends.
+             
+             
+             
+             
+             
+            */
+
+            #endregion
 
 
         }
