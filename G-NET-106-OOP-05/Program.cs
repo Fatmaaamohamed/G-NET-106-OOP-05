@@ -140,6 +140,22 @@ namespace G_NET_106_OOP_05
 
             #endregion
 
+            #region Question04
+
+            Console.WriteLine();
+
+            DeliveryAddress address = new DeliveryAddress("Cairo", "123 Main St", 11511);
+
+            StandardShipment s1 = new StandardShipment("SH001", "Laptop", 2.5m, 95m, address);
+            ExpressShipment s2 = new ExpressShipment("SH002", "Documents", 1.0m, 50m, address, 30m);
+            InternationalShipment s3 = new InternationalShipment("SH003", "Medical Supplies", 5.0m, 200m, address, "Germany", 60m);
+
+            Console.WriteLine($"Total Shipments Created: {Shipment.TotalShipmentsCreated}");
+
+
+            Console.WriteLine();
+
+            #endregion
 
             #region Question01
 

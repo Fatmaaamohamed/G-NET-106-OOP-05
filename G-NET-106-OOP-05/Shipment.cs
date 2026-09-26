@@ -11,7 +11,11 @@ namespace G_NET_106_OOP_05
         private decimal weight;
         private decimal deliveryFee;
 
+        #region Question04
 
+        public static int TotalShipmentsCreated { get; private set; }
+
+        #endregion
 
 
         public DeliveryAddress Destination { get; set; }
@@ -84,6 +88,12 @@ namespace G_NET_106_OOP_05
 
 
             TrackingCode = trackingCode;
+
+            #region Question04
+
+            TotalShipmentsCreated++;
+
+            #endregion
         }
 
 
@@ -101,6 +111,13 @@ namespace G_NET_106_OOP_05
             Description = description;
             Weight = weight;
             DeliveryFee = deliveryFee;
+
+
+            #region Question04
+
+            TotalShipmentsCreated++;
+
+            #endregion
         }
 
 
