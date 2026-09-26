@@ -26,6 +26,38 @@ namespace G_NET_106_OOP_05
             #endregion
 
 
+            #region Question02
+
+            /*
+             
+             a) A shallow copy creates a new object instance, but duplicates only the fields of the original object,
+                keeping references to any nested objects shared between both instances and arrays.
+
+
+             b) A deep copy creates a new object instance and recursively duplicates all nested objects and references,
+                producing a completely independent object.
+
+
+             c) For reference-type members, only their memory addresses are copied, so both the original object and the new copy end up
+                referencing the exact same nested objects in memory except string.
+
+
+             d) For reference-type members, new objects are instantiated in memory and filled with copies of the nested data, 
+                giving the new object its own distinct reference-type members.
+             
+
+             e) When a user edits an item in their shopping cart , deep copy is safer whenever an object needs to be modified independently without 
+                risking unintentional side effects on the original object's internal data.
+             
+            
+             
+             */
+
+
+
+            #endregion
+
+
 
 
         }
