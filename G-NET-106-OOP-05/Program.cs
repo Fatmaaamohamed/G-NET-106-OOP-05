@@ -58,6 +58,34 @@ namespace G_NET_106_OOP_05
             #endregion
 
 
+            #region Question03
+
+            /*
+             
+             a) A static field belongs to the class itself and has a single shared copy across all instances. 
+                An instance field belongs to a specific object, meaning every object instance gets its own independent copy of that field.
+
+            
+             b) A static method is a method that belongs to the class rather than an object instance and can be called directly 
+               on the class itself. No, a static method cannot directly access instance members
+
+
+             c) A static constructor is used to initialize static data or perform actions needed only once for a class. 
+                It is executed automatically by the runtime before the first instance is created or any static member is accessed.
+             
+
+             d) A static class is a container class that can only hold static members and cannot be instantiated or inherited.
+                No, you cannot create an object from a static class .
+             
+             
+             */
+
+
+
+
+            #endregion
+
+
 
 
         }
