@@ -136,9 +136,11 @@ namespace G_NET_106_OOP_05
 
         public abstract void PrintShipment();
 
-        
 
+        #region Question01
+        public abstract Shipment CopyShipment();
 
+        #endregion 
 
     }
 }

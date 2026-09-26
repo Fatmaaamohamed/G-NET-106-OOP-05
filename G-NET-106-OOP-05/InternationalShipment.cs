@@ -93,5 +93,12 @@ namespace G_NET_106_OOP_05
             return EstimatedCost * 0.12m;
 
         }
+
+        #region Question01
+        public override Shipment CopyShipment()
+        {
+            return new InternationalShipment(TrackingCode, Description, Weight, DeliveryFee, Destination, DestinationCountry, CustomsFee);
+        }
+        #endregion
     }
 }

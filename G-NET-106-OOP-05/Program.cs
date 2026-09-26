@@ -141,6 +141,26 @@ namespace G_NET_106_OOP_05
             #endregion
 
 
+            #region Question01
+
+            Console.WriteLine("Object Copying");
+            Console.WriteLine("===================================================================================");
+
+            DeliveryAddress address1 = new DeliveryAddress("123 Main St", "Cairo", 11511);
+            StandardShipment sh1 = new StandardShipment("SH001", "Laptop", 3, 95, address1);
+
+            Shipment assignedShipment = sh1;
+
+            Console.WriteLine($"Original Shipment  : {sh1.TrackingCode}");
+            Console.WriteLine($"Assigned Shipment  : {assignedShipment.TrackingCode}\n");
+
+            Console.WriteLine($"Same Object : {ReferenceEquals(sh1, assignedShipment)}");
+
+            Console.WriteLine();
+
+
+            #endregion
+
 
 
         }

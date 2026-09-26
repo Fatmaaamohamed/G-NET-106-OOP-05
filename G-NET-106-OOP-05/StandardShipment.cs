@@ -44,5 +44,13 @@ namespace G_NET_106_OOP_05
             return EstimatedCost * 0.05m;
         }
 
+        #region Question01
+        public override Shipment CopyShipment()
+        {
+            return new StandardShipment(TrackingCode, Description, Weight, DeliveryFee, Destination);
+        }
+
+        #endregion
+
     }
 }
