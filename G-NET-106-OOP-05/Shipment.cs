@@ -184,6 +184,13 @@ namespace G_NET_106_OOP_05
 
 
         #endregion
+
+        #region Question06
+        public static int GetTotalShipmentsCreated()
+        {
+            return TotalShipmentsCreated;
+        }
+        #endregion
     }
 }
 

@@ -140,6 +140,7 @@ namespace G_NET_106_OOP_05
 
             #endregion
 
+
             #region Question04
 
             Console.WriteLine();
@@ -150,7 +151,7 @@ namespace G_NET_106_OOP_05
             ExpressShipment s2 = new ExpressShipment("SH002", "Documents", 1.0m, 50m, address, 30m);
             InternationalShipment s3 = new InternationalShipment("SH003", "Medical Supplies", 5.0m, 200m, address, "Germany", 60m);
 
-            Console.WriteLine($"Total Shipments Created: {Shipment.TotalShipmentsCreated}");
+            Console.WriteLine($"Total Shipments Created: {Shipment.GetTotalShipmentsCreated()}");
 
 
             Console.WriteLine();
