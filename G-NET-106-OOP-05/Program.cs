@@ -243,6 +243,35 @@ namespace G_NET_106_OOP_05
 
             #endregion
 
+
+
+            #region Question08
+
+            Console.WriteLine();
+     
+            Console.WriteLine("Extension Methods");
+            Console.WriteLine("===================================================================================");
+
+            // Calling GetSummary() extension method
+            Console.WriteLine(s1.GetSummary());
+            Console.WriteLine(s2.GetSummary());
+            Console.WriteLine(s3.GetSummary());
+
+            Console.WriteLine();
+
+            // Calling IsDelivered() extension method
+            Console.WriteLine($"Is SH001 Delivered? {s1.IsDelivered()}");
+            Console.WriteLine($"Is SH003 Delivered? {s3.IsDelivered()}");
+
+
+
+
+            #endregion
+
+
         }
+
+
+
     }
 }
