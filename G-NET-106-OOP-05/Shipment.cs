@@ -75,7 +75,16 @@ namespace G_NET_106_OOP_05
             }
         }
 
+        #region Question05
 
+        static Shipment()
+        {
+            TotalShipmentsCreated = 0;
+            Console.WriteLine("Shipment System Initialized");
+            Console.WriteLine("");
+        }
+
+        #endregion
 
         public Shipment(string trackingCode)
         {
