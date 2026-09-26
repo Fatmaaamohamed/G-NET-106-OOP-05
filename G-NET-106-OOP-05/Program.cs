@@ -112,6 +112,35 @@ namespace G_NET_106_OOP_05
             #endregion
 
 
+            #region Question05
+
+            /*
+             
+            a) A partial class is a special class definition that allows its source code to be split 
+               across two or more separate code files within the same project, using the partial keyword.
+
+            b) Auto-Generated Code: Keeps machine-generated code separate from custom code so edits aren't overwritten.
+
+               Team Collaboration: Enables multiple developers to work on the same class across different files 
+               simultaneously without merge conflicts.
+
+               Code Organization: Keeps huge classes manageable and easier to navigate.
+             
+            c) A partial method is a method declared in one file of a partial class whose optional 
+               implementation can be provided in another file of the same class.
+
+            d) The compiler completely removes the method signature and all calls to it from the final compiled code,
+               leaving zero runtime or performance overhead
+             
+             
+             
+             
+             
+             */
+
+            #endregion
+
+
         }
     }
 }
