@@ -140,7 +140,16 @@ namespace G_NET_106_OOP_05
         #region Question01
         public abstract Shipment CopyShipment();
 
-        #endregion 
+        #endregion
+
+        #region Question02
+
+        public Shipment ShallowCopy()
+        {
+            return (Shipment)this.MemberwiseClone();
+        }
+
+        #endregion
 
     }
 }

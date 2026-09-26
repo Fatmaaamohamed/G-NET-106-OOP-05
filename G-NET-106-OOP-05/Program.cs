@@ -161,6 +161,32 @@ namespace G_NET_106_OOP_05
 
             #endregion
 
+            #region Question02
+
+            Console.WriteLine("Shallow Copy");
+            Console.WriteLine("===================================================================================");
+
+            DeliveryAddress shallowAddr = new DeliveryAddress("Cairo", "123 Main St", 11511);
+            StandardShipment shallowOrig = new StandardShipment("SH001", "Laptop", 3, 95, shallowAddr);
+
+            Shipment shallowCopy = shallowOrig.ShallowCopy();
+
+
+            Console.WriteLine($"Original Shipment Address : {shallowOrig.Destination.City}");
+            Console.WriteLine($"Copied Shipment Address   : {shallowCopy.Destination.City}\n");
+
+
+            Console.WriteLine("Changing copied shipment address...\n");
+            shallowCopy.Destination.City = "Giza";
+
+            Console.WriteLine($"Original Shipment Address : {shallowOrig.Destination.City}");
+            Console.WriteLine($"Copied Shipment Address   : {shallowCopy.Destination.City}\n");
+
+            Console.WriteLine($"Same DeliveryAddress Object : {ReferenceEquals(shallowOrig.Destination, shallowCopy.Destination)}");
+
+
+            #endregion
+
 
 
         }
