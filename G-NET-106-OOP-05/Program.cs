@@ -140,6 +140,15 @@ namespace G_NET_106_OOP_05
 
             #endregion
 
+            #region Last
+            DeliveryUtilities.PrintSystemTitle("Smart Delivery Management System");
+            Console.WriteLine();
+            #endregion
+
+            #region Creating Shipments
+            DeliveryUtilities.PrintSystemTitle("Creating Shipments...");
+            Console.WriteLine();
+            #endregion
 
             #region Question07
             DeliveryUtilities.PrintSystemTitle("Delivery Center");
@@ -248,9 +257,12 @@ namespace G_NET_106_OOP_05
             #region Question08
 
             Console.WriteLine();
-     
-            Console.WriteLine("Extension Methods");
-            Console.WriteLine("===================================================================================");
+
+            DeliveryUtilities.PrintSystemTitle("Extension Methods");
+
+         
+            s2.UpdateTrackingStatus("Out For Delivery");
+            s3.UpdateTrackingStatus("Delivered");
 
             // Calling GetSummary() extension method
             Console.WriteLine(s1.GetSummary());
@@ -269,7 +281,43 @@ namespace G_NET_106_OOP_05
             #endregion
 
 
+            #region Tracking Status
+            DeliveryUtilities.PrintSystemTitle("Tracking Status");
+            Console.WriteLine();
+
+            s1.UpdateTrackingStatus("Out For Delivery");
+            Console.WriteLine();
+            #endregion
+
+            #region Static Utilities
+            DeliveryUtilities.PrintSystemTitle("Static Utilities");
+            Console.WriteLine();
+
+            DeliveryUtilities.PrintSeparator();
+            Console.WriteLine("Delivery Center");
+            DeliveryUtilities.PrintSeparator();
+            Console.WriteLine();
+            Console.WriteLine($"Total Shipments Created : {Shipment.GetTotalShipmentsCreated()}");
+            Console.WriteLine();
+            #endregion
+
+            #region Partial Method
+            DeliveryUtilities.PrintSystemTitle("Partial Method");
+            Console.WriteLine();
+
+            s1.UpdateTrackingStatus("Delivered");
+            Console.WriteLine();
+            #endregion
+
+            #region Completion
+            DeliveryUtilities.PrintSystemTitle("Assignment Completed");
+            #endregion
+
+
+
+
         }
+
 
 
 

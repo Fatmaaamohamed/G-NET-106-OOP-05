@@ -105,7 +105,7 @@ namespace G_NET_106_OOP_05
 
         public override Shipment DeepCopy()
         {
-            return new ExpressShipment(TrackingCode, Description, Weight, DeliveryFee, Destination?.DeepCopy(), CustomsFee);
+            return new InternationalShipment(TrackingCode, Description, Weight, DeliveryFee, Destination?.DeepCopy(), DestinationCountry, CustomsFee);
         }
 
 

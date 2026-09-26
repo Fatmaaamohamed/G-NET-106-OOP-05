@@ -4,7 +4,7 @@ using System.Text;
 
 namespace G_NET_106_OOP_05
 {
-    internal abstract class Shipment
+    internal abstract partial class Shipment 
     {
         private string trackingCode;
         private string description;
@@ -191,6 +191,8 @@ namespace G_NET_106_OOP_05
             return TotalShipmentsCreated;
         }
         #endregion
+
+        partial void OnTrackingStatusChanged(string newStatus);
     }
 }
 
