@@ -72,5 +72,15 @@ namespace G_NET_106_OOP_05
             return new ExpressShipment(TrackingCode, Description, Weight, DeliveryFee, Destination, ExtraFee);
         }
         #endregion
+
+        #region Question03
+
+        public override Shipment DeepCopy()
+        {
+            return new ExpressShipment(TrackingCode, Description, Weight, DeliveryFee, Destination?.DeepCopy(), ExtraFee);
+        }
+
+
+        #endregion
     }
 }

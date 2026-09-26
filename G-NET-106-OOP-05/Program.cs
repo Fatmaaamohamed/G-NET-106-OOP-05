@@ -188,6 +188,39 @@ namespace G_NET_106_OOP_05
             #endregion
 
 
+            #region Question03
+
+            Console.WriteLine();
+
+            Console.WriteLine("Deep Copy");
+            Console.WriteLine("===================================================================================");
+
+            DeliveryAddress deepAddr = new DeliveryAddress("Cairo", "123 Main St", 11511);
+            StandardShipment deepOrig = new StandardShipment("SH001", "Laptop", 3, 95, deepAddr);
+
+        
+            Shipment deepCopy = deepOrig.DeepCopy();
+
+        
+            Console.WriteLine($"Original Shipment Address : {deepOrig.Destination.City}");
+            Console.WriteLine($"Copied Shipment Address   : {deepCopy.Destination.City}\n");
+
+            Console.WriteLine("Changing copied shipment address...\n");
+            deepCopy.Destination.City = "Giza";
+
+            Console.WriteLine($"Original Shipment Address : {deepOrig.Destination.City}");
+            Console.WriteLine($"Copied Shipment Address   : {deepCopy.Destination.City}\n");
+
+  
+            Console.WriteLine($"Same DeliveryAddress Object : {ReferenceEquals(deepOrig.Destination, deepCopy.Destination)}");
+
+
+
+
+
+
+
+            #endregion
 
         }
     }

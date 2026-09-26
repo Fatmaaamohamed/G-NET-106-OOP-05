@@ -28,5 +28,14 @@ namespace G_NET_106_OOP_05
         {
             return $" City: {City}        Street: {Street}         Building Number: {BuildingNumber} ";
         }
+
+        #region Question03
+
+        public DeliveryAddress DeepCopy()
+        {
+            return new DeliveryAddress(City, Street, BuildingNumber);
+        }
+
+        #endregion
     }
 }

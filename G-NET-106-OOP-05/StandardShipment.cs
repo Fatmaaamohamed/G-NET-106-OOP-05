@@ -52,5 +52,15 @@ namespace G_NET_106_OOP_05
 
         #endregion
 
+
+        #region Question03
+
+        public override Shipment DeepCopy()
+        {
+            return new StandardShipment(TrackingCode, Description, Weight, DeliveryFee, Destination?.DeepCopy());
+        }
+
+        #endregion
+
     }
 }

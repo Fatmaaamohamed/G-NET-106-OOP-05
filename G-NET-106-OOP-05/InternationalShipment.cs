@@ -100,5 +100,16 @@ namespace G_NET_106_OOP_05
             return new InternationalShipment(TrackingCode, Description, Weight, DeliveryFee, Destination, DestinationCountry, CustomsFee);
         }
         #endregion
+
+        #region Question03
+
+        public override Shipment DeepCopy()
+        {
+            return new ExpressShipment(TrackingCode, Description, Weight, DeliveryFee, Destination?.DeepCopy(), CustomsFee);
+        }
+
+
+        #endregion
+
     }
 }
